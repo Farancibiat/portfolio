@@ -1,0 +1,37 @@
+.sideBar {
+  background-color: rgb(41, 43, 44, 9);
+  border-radius: 10px;
+  padding: 0%;
+  margin-top: 15px;;
+}
+
+.top-sideBar{
+    background-color: rgb(71, 70, 70);
+    padding: 0%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.prof-foto {
+  background-color: rgba(88, 86, 86, 0.932);
+  background-image: url(../../img/imagen-perfil-sm2.png);
+  background-position: 50% 110%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 0, 0,0.3);
+    border: 5px solid #ffc107;
+}
+.circleText{
+    padding-top: 13px;
+}
+
+
+
