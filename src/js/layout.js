@@ -3,7 +3,11 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 import NavigationBar from "./component/navigationBar";
 import SideBar from "./component/sideBar";
-import Home from "./component/home";
+
+import Contact from "./pages/contact";
+import Projects from "./pages/projects";
+import Experience from "./pages/experience"
+import About from "./pages/about";
 import injectContext from "./store/appContext";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -18,20 +22,36 @@ const Layout = () => {
     <BrowserRouter basename={basename}>
       <ScrollToTop>
         <NavigationBar />
-		<div className="container">
-        <div className="row">
-          <div className="col-12 col-sm-4">
-            <SideBar />
-          </div>
-          <div className="col-12 col-sm-8 p-0">
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-            </Switch>
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-sm-4">
+              <SideBar />
+            </div>
+            <div className="col-12 col-sm-8">
+                <Switch>
+                  <Route exact path="/">
+                    <About />
+                  </Route>
+                </Switch>
+                <Switch>
+                  <Route exact path="/Contact">
+                    <Contact />
+                  </Route>
+                </Switch>
+                <Switch>
+                  <Route exact path="/experience">
+                    <Experience />
+                  </Route>
+                </Switch>
+                <Switch>
+                  <Route exact path="/projects">
+                    <Projects />
+                  </Route>
+                </Switch>
+
+            </div>
           </div>
         </div>
-		</div>
       </ScrollToTop>
     </BrowserRouter>
   );

@@ -6,7 +6,7 @@ import "../styles/navigationBar.css";
 export const NavigationBar = () => {
   return (
     <div className="container mt-3">
-      <nav className="navbar navbar-expand-lg shadow navbar-dark bg-dark navigationBar d-flex">
+      <nav className="navbar navbar-expand-lg navigationBar d-flex">
         <Link className="navbar-brand d-flex" to="/">
           <img className="brandImage" src={brand} alt="" width="60" />
           <h3 className="brandText my-auto">Portafolio</h3>

@@ -3,15 +3,21 @@ import "../styles/sideBar.css";
 import html5 from "../../img/html5.png";
 import css3 from "../../img/css3.png";
 import jscript from "../../img/js.png";
-import bootstrap from "../../img/bootstrap.png";
 import reactjs from "../../img/Reactjs.png";
-import flux from "../../img/flux.png";
 import python from "../../img/python.png";
 import postgresql from "../../img/postgresql.png";
 import flask from "../../img/Flask.png";
 import sqlAlchemy from "../../img/sqlAlchemy.png";
+
 // import { Link } from "react-router-dom";
 // import { Context } from "../store/appContext";
+import {
+  Check,
+  Github,
+  Linkedin,
+  EnvelopeFill,
+  TelephoneFill,
+} from "react-bootstrap-icons";
 
 // import { LinkContainer } from "react-router-bootstrap";
 
@@ -20,8 +26,8 @@ export const SideBar = () => {
 
   return (
     <>
-      <div className="text-center sideBar bg-dark">
-        <div className="top-sideBar pb-2">
+      <div className="sideBar bg-dark">
+        <div className="topSideBar pb-2">
           <div className="row pt-3">
             <div className="prof-foto mx-auto"></div>
           </div>
@@ -33,78 +39,142 @@ export const SideBar = () => {
             </p>
           </div>
         </div>
-        <div className="idioma px-4 text-light">
-          <h3 className=" text-center py-2">Idiomas</h3>
-          <div className="row">
-            <div className="col-6">
-              <div className="circle mb-2 mx-auto">
-                <h6 className="circleText text-light">100%</h6>
+        <div className="contentSideBar">
+          <div className="idioma text-center px-4 text-light">
+            <h5 className="  py-2">Idiomas</h5>
+            <div className="row">
+              <div className="col-6">
+                <div className="circle mb-2 mx-auto">
+                  <h6 className="circleText text-light">100%</h6>
+                </div>
+                <p>Español - Nativo</p>
               </div>
-              <p>Español - Nativo</p>
+              <div className="col-6 ">
+                <div className="circle mb-2 mx-auto">
+                  <h6 className="circleText text-light ">90%</h6>
+                </div>
+                <p>Inglés - C2</p>
+              </div>
             </div>
-            <div className="col-6 ">
-              <div className="circle mb-2 mx-auto">
-                <h6 className="circleText text-light ">90%</h6>
+          </div>
+          <hr className="bg-light mx-4" />
+          <div className="codeblock text-center px-4">
+            <h5 className="text-light text-center">Herramientas</h5>
+            <div className="row mt-3">
+              <div className="col-6 col-sm-4">
+                <img src={html5} alt="HTML5" width="40" />
+                <p className="text-light mb-1">HTML5</p>
               </div>
-              <p>Inglés - C2</p>
+              <div className="col-6 col-sm-4">
+                <img src={css3} alt="CSS3" width="40" />
+                <p className="text-light">CSS3</p>
+              </div>
+              <div className="col-6 col-sm-4">
+                <img src={jscript} alt="JS" width="37" />
+                <p className="text-light">Javascript</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-6 col-sm-4">
+                <img src={reactjs} alt="reactjs" width="40" />
+                <p className="text-light">React.js</p>
+              </div>
+              <div className="col-6 col-sm-4 pt-2">
+                <img src={python} alt="Python" width="40" />
+                <p className="text-light">Python</p>
+              </div>
+              <div className="col-6 col-sm-4">
+                <img src={flask} alt="Flask" width="50" />
+                <p className="text-light">Flask</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12 col-sm-4 pt-1">
+                <img src={postgresql} alt="postgreSQL" width="40" />
+                <p className="text-light">PostgreSql</p>
+              </div>
+              <div className="col-12 col-sm-8 pt-2">
+                <img src={sqlAlchemy} alt="sqlAlchemy" width="150" />
+                <p className="text-light text-center">SqlAlchemy</p>
+              </div>
+            </div>
+          </div>
+          <hr className="bg-light mx-4" />
+          <div className="knoledgeblock text-light px-4">
+            <div className="row">
+              <div className="col-12">
+                <h5 className="text-center">Conocimientos</h5>
+                <p className="sbli">
+                  <Check className="text-warning mr-2" />
+                  GIT
+                </p>
+                <p className="sbli">
+                  <Check className="text-warning mr-2" />
+                  Bootstrap
+                </p>
+                <p className="sbli">
+                  <Check className="text-warning mr-2" />
+                  Flux/Context
+                </p>
+                <p className="sbli">
+                  <Check className="text-warning mr-2" />
+                  Metodología Scrum Agile
+                </p>
+                <p className="sbli">
+                  <Check className="text-warning mr-2" />
+                  Administración Google Workspace
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr className="bg-light mx-4" />
+          <div className="cvblock text-center text-light pb-4">
+            <h5 className="pb-4">Descargar CV</h5>
+            <div className="row">
+              <div className="col-12 col-sm-6">
+                <a
+                  href="https://drive.google.com/file/d/1xnn89woj-6h8xrdZeIHeGsgfYnWE7FNO/view?usp=sharing"
+                  download
+                >
+                  <div className="cv mx-auto" />
+                  Español
+                </a>
+              </div>
+              <div className="col-12 text-center col-sm-6">
+                <a
+                  href="https://drive.google.com/file/d/1-QLFFzI1iu8sqvCjILiuyMXYqFtrv2ly/view?usp=sharing"
+                  download
+                >
+                  <div className="cv mx-auto" />
+                  English
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <hr className="bg-light mx-4" />
-        <div className="codeblock px-4">
-          <h3 className="text-light text-center">"Herramientas"</h3>
-          <div className="row mt-3">
-            <div className="col-6 col-sm-4">
-              <img src={html5} alt="HTML5" width="40" />
-              <p className="text-light mb-1">HTML5</p>
+        <div className="botSideBar">
+          <div className="row px-5 py-3 text-center">
+            <div className="col-3 ">
+              <a href="https://www.linkedin.com/in/felipe-arancibia-torres/">
+                <Linkedin />
+              </a>
             </div>
-            <div className="col-6 col-sm-4">
-              <img src={css3} alt="CSS3" width="40" />
-              <p className="text-light">CSS3</p>
+            <div className="col-3 ">
+              <a href="https://www.linkedin.com/in/felipe-arancibia-torres/">
+                <Github />
+              </a>
             </div>
-            <div className="col-6 col-sm-4">
-              <img src={jscript} alt="JS" width="37" />
-              <p className="text-light">Javascript</p>
+            <div className="col-3 ">
+              <a href="tel:+56957097420">
+                <TelephoneFill />
+              </a>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-6 col-sm-4">
-              <img src={bootstrap} alt="Bootstrap" width="40" />
-              <p className="text-light">Bootstrap</p>
-            </div>
-            <div className="col-6 col-sm-4">
-              <img src={reactjs} alt="reactjs" width="40" />
-              <p className="text-light">React.js</p>
-            </div>
-            <div className="col-6 col-sm-4">
-              <img src={flux} alt="flux" width="40" />
-              <p className="text-light">Flux</p>
+            <div className="col-3 ">
+              <a href="mailto:arancibiat.felipe@gmail.com?Subject=Contacto%20desde%20sito%20web">
+                <EnvelopeFill />
+              </a>
             </div>
           </div>
-		  <div className="row">
-            <div className="col-6 col-sm-4 pt-2">
-              <img src={python} alt="Python" width="40" />
-              <p className="text-light">Python</p>
-            </div>
-            <div className="col-6 col-sm-4">
-              <img src={flask} alt="Flask" width="50" />
-              <p className="text-light">Flask</p>
-            </div>
-			<div className="col-6 col-sm-4 pt-1">
-              <img src={postgresql} alt="postgreSQL" width="40" />
-              <p className="text-light">PostgreSql</p>
-          </div>
-          </div>
-		  <div className="row ">
-			  <div className="col-sm-2"></div>
-           <div className="col-12 col-sm-8">
-              <img src={sqlAlchemy} alt="sqlAlchemy" width="150" />
-              <p className="text-light text-center">SqlAlchemy</p>
-			  </div>
-			  <div className="col-sm-2"></div>
-            </div>
-
-          <hr className="bg-light mx-2" />
         </div>
       </div>
     </>
