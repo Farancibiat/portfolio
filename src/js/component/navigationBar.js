@@ -6,13 +6,13 @@ import "../styles/navigationBar.css";
 export const NavigationBar = () => {
   return (
     <div className="container mt-3">
-      <nav className="navbar navbar-expand-lg navigationBar d-flex">
+      <nav className="navbar navbar-expand-lg navbar-light navigationBar">
         <Link className="navbar-brand d-flex" to="/">
           <img className="brandImage" src={brand} alt="" width="60" />
           <h3 className="brandText my-auto">Portafolio</h3>
         </Link>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler "
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"
@@ -20,7 +20,7 @@ export const NavigationBar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon mx-auto"></span>
+          <span className="navbar-toggler-icon mx-auto "></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ml-auto">

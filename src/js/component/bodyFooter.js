@@ -11,7 +11,7 @@ export const BodyFooter = () => {
 
     return(
         <>
-        <div className="botSideBar text-center footer mt-auto  py-3">
+        <div className="botSideBar text-center footer mt-auto py-3 mb-0">
         <p className="text-light mb-0">Sitio diseñado por Felipe Arancibia, 2021.</p>
         </div>
         </>

@@ -9,7 +9,7 @@ import postgresql from "../../img/postgresql.png";
 import flask from "../../img/Flask.png";
 import sqlAlchemy from "../../img/sqlAlchemy.png";
 
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { Context } from "../store/appContext";
 import {
   Check,
@@ -170,9 +170,9 @@ export const SideBar = () => {
               </a>
             </div>
             <div className="col-3 ">
-              <a href="mailto:arancibiat.felipe@gmail.com?Subject=Contacto%20desde%20sito%20web">
+              <Link to="/contact">
                 <EnvelopeFill />
-              </a>
+                </Link>
             </div>
           </div>
         </div>
