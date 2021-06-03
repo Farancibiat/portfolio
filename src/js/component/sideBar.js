@@ -8,6 +8,7 @@ import python from "../../img/python.png";
 import postgresql from "../../img/postgresql.png";
 import flask from "../../img/Flask.png";
 import sqlAlchemy from "../../img/sqlAlchemy.png";
+import sql from "../../img/sql.png"
 
 import { Link } from "react-router-dom";
 // import { Context } from "../store/appContext";
@@ -61,29 +62,29 @@ export const SideBar = () => {
           <div className="codeblock text-center px-4">
             <h5 className="text-light text-center">Herramientas</h5>
             <div className="row mt-3">
-              <div className="col-6 col-sm-4">
+              <div className="col-12 col-sm-4">
                 <img src={html5} alt="HTML5" width="40" />
                 <p className="text-light mb-1">HTML5</p>
               </div>
-              <div className="col-6 col-sm-4">
+              <div className="col-12 col-sm-4">
                 <img src={css3} alt="CSS3" width="40" />
                 <p className="text-light">CSS3</p>
               </div>
-              <div className="col-6 col-sm-4">
+              <div className="col-12 col-sm-4">
                 <img src={jscript} alt="JS" width="37" />
                 <p className="text-light">Javascript</p>
               </div>
             </div>
             <div className="row">
-              <div className="col-6 col-sm-4">
+              <div className="col-12 col-sm-4">
                 <img src={reactjs} alt="reactjs" width="40" />
-                <p className="text-light">React.js</p>
+                <p className="text-light pt-3">React.js</p>
               </div>
-              <div className="col-6 col-sm-4 pt-2">
+              <div className="col-12 col-sm-4 pt-2">
                 <img src={python} alt="Python" width="40" />
-                <p className="text-light">Python</p>
+                <p className="text-light pt-1">Python</p>
               </div>
-              <div className="col-6 col-sm-4">
+              <div className="col-12 col-sm-4">
                 <img src={flask} alt="Flask" width="50" />
                 <p className="text-light">Flask</p>
               </div>
@@ -93,9 +94,13 @@ export const SideBar = () => {
                 <img src={postgresql} alt="postgreSQL" width="40" />
                 <p className="text-light">PostgreSql</p>
               </div>
-              <div className="col-12 col-sm-8 pt-2">
-                <img src={sqlAlchemy} alt="sqlAlchemy" width="150" />
-                <p className="text-light text-center">SqlAlchemy</p>
+              <div className="col-12 col-sm-4 pt-1">
+                <img src={sql} alt="SQL" width="70" />
+                <p className="text-light pt-1">SQL</p>
+              </div>
+              <div className="col-12 col-sm-4 pt-2">
+                <img src={sqlAlchemy} alt="sqlAlchemy" width="100" />
+                <p className="text-light text-center pt-2">SqlAlchemy</p>
               </div>
             </div>
           </div>
@@ -106,7 +111,7 @@ export const SideBar = () => {
                 <h5 className="text-center">Conocimientos</h5>
                 <p className="sbli">
                   <Check className="text-warning mr-2" />
-                  GIT
+                  GIT - Github
                 </p>
                 <p className="sbli">
                   <Check className="text-warning mr-2" />

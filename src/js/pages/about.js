@@ -2,66 +2,18 @@ import React from "react";
 import CvCard from "../../img/cv-card.png";
 import PichCard from "../../img/pichangapp-card.png";
 import BodyFooter from "../component/bodyFooter";
-import { PersonLinesFill, ChevronCompactDown } from "react-bootstrap-icons";
+import { PersonLinesFill} from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 
 export const About = () => {
   return (
     <>
-      <div className="bodyFrame">
-        <div className="container contentScroller ">
-          <div className="card border-0 mt-4">
-            <div className="card-header bg-dark " id="headingOne">
-              <h2 className="mb-0">
-                <button
-                  className="btn btn-link btn-block text-left"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
-                  id="cardTitle"
-                >
-                  Perfil <ChevronCompactDown size={15} />
-                </button>
-              </h2>
-            </div>
-            <div
-              id="collapseOne"
-              className="collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#profileAccordeon"
-            >
-              <div className="card-body">
-                Soy un profesional con interés en aprender herramientas de
-                trabajo que mejoren la eficiencia de los recursos a través de
-                herramientas digitales.
-                <br />
-                <br />
-                Me gusta trabajar en equipo, generar lazos de confianza que
-                faciliten el trabajo colaborativo y trabajar en ambientes
-                distendidos.
-                <br />
-                <br />
-                Me acomoda trabajar enfocado en metas y analizo constantemente
-                mi entorno en busca de oportunidades que me ayuden a obtener
-                mayor bienestar y mejores resultados, me gusta enseñar y valoro
-                el consejo de mis colegas.
-                <br />
-                <br />
-                Mis fortalezas están en el desarrollo lógico de aplicaciones y
-                front-end. Ya sea back-end, front-end o full-stack, siempre
-                prefiero los ambientes desafiantes con trabajo colectivo. <br />
-                <br />
-                <Link
-                  to="/experience"
-                  className="btn btn-sm btn-warning text-dark"
-                >
-                  Ver Experiencia
-                </Link>
-              </div>
-            </div>
-          </div>
+      <div className=" bodyFrame">
+        <div className="container contentScroller">
+          <div className="container my-4 px-5 pb-5  bg-dark card">
+            <h1 className="display-4 fw-bold text-center text-warning my-4">
+             ¡Bienvenid@!
+            </h1>
           <div className="row mt-5">
             <div className="col-12 col-lg-4">
               <div className="card my-2">
@@ -127,8 +79,10 @@ export const About = () => {
             </div>
           </div>
         </div>
+        </div>
         <BodyFooter />
       </div>
+      
     </>
   );
 };

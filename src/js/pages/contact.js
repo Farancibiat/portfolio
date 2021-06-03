@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useFormik } from "formik";
 import { Redirect } from "react-router-dom";
 import * as Yup from "yup";
+import {EnvelopeFill} from "react-bootstrap-icons";
 import { Context } from "../store/appContext";
 
 import BodyFooter from "../component/bodyFooter";
@@ -32,10 +33,15 @@ export function Contact() {
       <div className=" bodyFrame">
         <div className="container contentScroller">
           {store.redirect ? <Redirect to="/" /> : ""}
-          <div className="container mt-4 px-5 pb-5 pt-3 bg-dark text-warning card">
-            <div className="display-4 fw-bold text-center my-4">Contacto</div>
-            <p>Al enviar este formulario, te llegará una copia al
-                      correo que ingreses. <br/>Te contactaré lo antes posible.</p>
+          <div className="container mt-4 px-5 pb-5 pt-3 bg-dark card">
+            <div className="display-4 fw-bold text-center text-warning my-4">
+              <EnvelopeFill/> Contacto
+            </div>
+            <p className="text-light">
+              Al enviar este formulario, te llegará una copia al correo que
+              ingreses. <br />
+              Te contactaré lo antes posible.
+            </p>
             <form onSubmit={formik.handleSubmit}>
               {/* Full Name input and error msg alternative*/}
               <div className="form-group">
@@ -116,10 +122,9 @@ export function Contact() {
                 </button>
               </div>
             </form>
-            
           </div>
         </div>
-        
+
         <BodyFooter />
       </div>
     </>

@@ -1,19 +1,20 @@
 import React from "react";
 import BodyFooter from "../component/bodyFooter";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";;
 
 export const Experience = () => {
   return (
     <>
       <div className=" bodyFrame">
         <div className="container contentScroller">
-          <div className="container my-4 px-5 pb-5 pt-3 bg-dark card">
+          <div className="container my-4 px-5 pb-5  bg-dark card">
             <h1 className="display-4 fw-bold text-center text-warning my-4">
               Experiencia
             </h1>
 
             <div className="accordion" id="accordionExample">
-              <div className="card ">
+
+            <div className="card ">
                 <div className="card-header p-0" id="headingOne">
                   <h2 className="mb-0">
                     <button
@@ -24,15 +25,69 @@ export const Experience = () => {
                       aria-expanded="true"
                       aria-controls="collapseOne"
                     >
+                      <b> Perfil</b>
+                    </button>
+                  </h2>
+                </div>
+                 
+                <div
+                  id="collapseOne"
+                  className="collapse show"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div className="card-body">
+                Soy un profesional con interés en aprender herramientas de
+                trabajo que mejoren la eficiencia de los recursos a través de
+                herramientas digitales.
+                <br />
+                <br />
+                Me gusta trabajar en equipo, generar lazos de confianza que
+                faciliten el trabajo colaborativo y trabajar en ambientes
+                distendidos.
+                <br />
+                <br />
+                Me acomoda trabajar enfocado en metas y analizo constantemente
+                mi entorno en busca de oportunidades que me ayuden a obtener
+                mayor bienestar y mejores resultados, me gusta enseñar y valoro
+                el consejo de mis colegas.
+                <br />
+                <br />
+                Mis fortalezas están en el desarrollo lógico de aplicaciones y
+                front-end. Ya sea back-end, front-end o full-stack, siempre
+                prefiero los ambientes desafiantes con trabajo colectivo. <br />
+                <br />
+                <Link
+                  to="/experience"
+                  className="btn btn-sm btn-warning text-dark"
+                >
+                  Ver Experiencia
+                </Link>
+              </div>
+            </div>
+          </div>
+
+
+              <div className="card ">
+                <div className="card-header p-0" id="headingTwo">
+                  <h2 className="mb-0">
+                    <button
+                      className="btn btn-block text-left p-3 alert-warning  bg-light"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="true"
+                      aria-controls="collapseTwo"
+                    >
                       <b>Educación</b>
                     </button>
                   </h2>
                 </div>
 
                 <div
-                  id="collapseOne"
+                  id="collapseTwo"
                   className="collapse show"
-                  aria-labelledby="headingOne"
+                  aria-labelledby="headingTwo"
                   data-parent="#accordionExample"
                 >
                   <div className="card-body">
@@ -94,24 +149,24 @@ export const Experience = () => {
                 </div>
               </div>
               <div className="card">
-                <div className="card-header p-0" id="headingTwo">
+                <div className="card-header p-0" id="headingFour">
                   <h2 className="mb-0">
                     <button
                       className="btn btn-block text-left collapsed p-3 alert-warning bg-light"
                       type="button"
                       data-toggle="collapse"
-                      data-target="#collapseTwo"
+                      data-target="#collapseFour"
                       aria-expanded="false"
-                      aria-controls="collapseTwo"
+                      aria-controls="collapseFour"
                     >
                       <b>Administrador de Empresas / Licenciado en Turismo</b>
                     </button>
                   </h2>
                 </div>
                 <div
-                  id="collapseTwo"
+                  id="collapseFour"
                   className="collapse"
-                  aria-labelledby="headingTwo"
+                  aria-labelledby="headingFour"
                   data-parent="#accordionExample"
                 >
                   <div className="card-body">
